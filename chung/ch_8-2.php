@@ -1,6 +1,7 @@
 <?php
 	$_title = '챕터 8';
 	require_once './inc/header.php';
+    require_once './inc/dbInfo.php';
 
     require_once __DIR__.'/ch8_cls/Db.php';
     require_once __DIR__.'/ch8_cls/Menu.php';
@@ -28,11 +29,7 @@
     <ul>
         <li>
             <p name="tab">Db.php</p>
-            <pre name="pre" style="display:none">
-    define('_HOST_', '10.20.4.51');
-    define('__ID__', 'root');
-    define('__PWD__', 'phpStudy1!');
-    define('__DB__', 'php_study');   
+            <pre name="pre" style="display:none">   
 
     class Db {
         private $con;

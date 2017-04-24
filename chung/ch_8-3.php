@@ -2,7 +2,8 @@
     $_title = '챕터 8';
 
     require_once './inc/header.php';
-
+    require_once './inc/dbInfo.php';
+    
     require_once __DIR__.'/ch8_cls/Db.php';
     require_once __DIR__.'/ch8_cls/Menu.php';
 

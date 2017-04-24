@@ -1,8 +1,5 @@
 <?php
-    define('_HOST_', '10.20.4.51');
-    define('__ID__', 'root');
-    define('__PWD__', 'phpStudy1!');
-    define('__DB__', 'php_study');   
+    require_once __DIR__.'/../inc/dbInfo.php';
 
     class Db {
         private $con;

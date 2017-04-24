@@ -1,18 +1,9 @@
 <?
 	$_title = '챕터 8';
 	require_once './inc/header.php';
-
-    define('_HOST_', '10.20.4.51');
-    define('__ID__', 'root');
-    define('__PWD__', 'phpStudy1!');
-    define('__DB__', 'php_study');
-       
+    require_once './inc/dbInfo.php';
 ?>
 <h3>get Connection</h3>
-<p><code>define('_HOST_', '10.20.4.51');</code></p>
-<p><code>define('__ID__', 'root');</code></p>
-<p><code>define('__PWD__', 'phpStudy1!');</code></p>
-<p><code>define('__DB__', 'php_study');</code></p>
 <pre>    
     $con = @mysqli_connect(_HOST_, __ID__, __PWD__, __DB__);
     
