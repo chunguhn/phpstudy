@@ -232,10 +232,68 @@ die(json_encode($res_data));
     $res[] = getContents($sURL_html3);
 ?>
 <pre>
-<?var_dump($res)?>
+<?//var_dump($res)?>
+array(4) {
+  [0]=>
+  array(4) {
+    ["response"]=>
+    string(50) "
+
+    i am a html!
+"
+    ["error"]=>
+    string(0) ""
+    ["error_no"]=>
+    int(0)
+    ["res_code"]=>
+    int(200)
+  }
+  [1]=>
+  array(4) {
+    ["response"]=>
+    string(36) "{"a":"i","b":"2","c":"\u3147\u3147"}"
+    ["error"]=>
+    string(0) ""
+    ["error_no"]=>
+    int(0)
+    ["res_code"]=>
+    int(200)
+  }
+  [2]=>
+  array(4) {
+    ["response"]=>
+    bool(false)
+    ["error"]=>
+    string(68) "Could not resolve host: 123.interpark.com; Name or service not known"
+    ["error_no"]=>
+    int(6)
+    ["res_code"]=>
+    int(0)
+  }
+  [3]=>
+  array(4) {
+    ["response"]=>
+    string(162) "
+
+
+404 Not Found
+
+nginx
+
+
+
+"
+    ["error"]=>
+    string(0) ""
+    ["error_no"]=>
+    int(0)
+    ["res_code"]=>
+    int(404)
+  }
+}
 </pre>    
 <br>
-<a href="ch_11-1.php?pg=<?= ++$_pg ?>">다음 >> </a>
+<!--<a href="ch_11-1.php?pg=<?= ++$_pg ?>">다음 >> </a>-->
 <script>
     $(function(){
         $('p[name=tab]').on('click', function(){
