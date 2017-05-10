@@ -65,7 +65,23 @@ $ini_array2 = parse_ini_file(__DIR__."/files/test.ini", true);
         <p name="tab">$ini_array1</p>
         <div name="pre" style="display:">            
             <pre>
-<? print_r($ini_array); ?>
+<? //print_r($ini_array); ?>
+Array
+(
+    [one] => 2
+    [five] => 5
+    [animal] => Dodo bird
+    [path] => /usr/local/bin
+    [URL] => http://www.example.com/~username
+    [phpversion] => Array
+        (
+            [0] => 5.0
+            [1] => 5.1
+            [2] => 5.2
+            [3] => 5.3
+        )
+
+)
             </pre>
         </div>
     </li>
@@ -73,7 +89,36 @@ $ini_array2 = parse_ini_file(__DIR__."/files/test.ini", true);
         <p name="tab">$ini_array2</p>
         <div name="pre" style="display:">            
             <pre>
-<? print_r($ini_array2); ?>
+<? //print_r($ini_array2); ?>
+Array
+(
+    [first_section] => Array
+        (
+            [one] => 1
+            [five] => 5
+            [animal] => Dodo bird
+        )
+
+    [second_section] => Array
+        (
+            [one] => 2
+            [path] => /usr/local/bin
+            [URL] => http://www.example.com/~username
+        )
+
+    [third_section] => Array
+        (
+            [phpversion] => Array
+                (
+                    [0] => 5.0
+                    [1] => 5.1
+                    [2] => 5.2
+                    [3] => 5.3
+                )
+
+        )
+
+) 
             </pre>
         </div>
     </li>
